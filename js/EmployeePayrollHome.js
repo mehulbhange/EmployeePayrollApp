@@ -75,5 +75,12 @@ const remove = (node) => {
     createInnerHTML();
 }
 
-
-
+const update = (node) => {
+    let empPayrollData = empDataList.find(empData => empData._id == node.id); 
+    if(!empPayrollData)
+        return;
+    
+    localStorage.setItem('editEmpId',empPayrollData._id);
+    window.location.replace(site_properties.add_emp_payroll_page);
+                                    
+}
