@@ -169,8 +169,7 @@ function getFromLocalStorage(){
     }
 }
 
-const resetForm = () =>{
-    console.log("reset called ")
+const resetForm = () =>{  
     setValue('#name','');
     unsetSelectedValues('[name=profile]');
     unsetSelectedValues('[name=gender]');
